@@ -5,9 +5,9 @@ using TMPro;
 
 public class UIHandler : MonoBehaviour
 {
-    public TMP_Text StoneText;
-    public TMP_Text MagicText;
-    public TMP_Text WaveText;
+    [SerializeField] TMP_Text StoneText;
+    [SerializeField] TMP_Text MagicText;
+    [SerializeField] TMP_Text WaveText;
 
     public int stoneCount = 5;
     public int magicCount = 5;
