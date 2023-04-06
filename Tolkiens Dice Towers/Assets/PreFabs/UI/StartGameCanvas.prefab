@@ -32,7 +32,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7119449756343388452}
+  - {fileID: 1050248738076240206}
   - {fileID: 3017774826773416020}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 113
+  m_fontSize: 113.05
   m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1001 &2899077891388980305
+--- !u!1001 &4928610933135989819
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -285,7 +285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247867041837289373, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: StartGameScript, Assembly-CSharp
+      value: GameStateScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4247867041837289373, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -321,11 +321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5401727103328286069, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 339.7287
       objectReference: {fileID: 0}
     - target: {fileID: 5401727103328286069, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 118.0039
       objectReference: {fileID: 0}
     - target: {fileID: 5401727103328286069, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -361,7 +361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5401727103328286069, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -85
+      value: -162
       objectReference: {fileID: 0}
     - target: {fileID: 5401727103328286069, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -381,8 +381,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
---- !u!224 &7119449756343388452 stripped
+--- !u!224 &1050248738076240206 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5401727103328286069, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
-  m_PrefabInstance: {fileID: 2899077891388980305}
+  m_PrefabInstance: {fileID: 4928610933135989819}
   m_PrefabAsset: {fileID: 0}
