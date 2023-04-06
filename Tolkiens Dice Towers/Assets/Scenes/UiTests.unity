@@ -330,6 +330,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 371802881196144913, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 371802881196144913, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 371802881196144913, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 371802881196144913, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -380,6 +392,26 @@ PrefabInstance:
     - target: {fileID: 371802881196144917, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
       propertyPath: m_Name
       value: BaseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 371802881196144918, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 371802881196144919, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 371802881196144919, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 371802881196144919, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 371802881196144919, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0216b92a6ada3248bd05a13a2bb3ccd, type: 3}
@@ -653,6 +685,18 @@ PrefabInstance:
     - target: {fileID: 2470847456391924776, guid: c9aa7041ade31a64182dfd8866cd2a89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470847456391924778, guid: c9aa7041ade31a64182dfd8866cd2a89, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470847456391924778, guid: c9aa7041ade31a64182dfd8866cd2a89, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1980
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470847456391924778, guid: c9aa7041ade31a64182dfd8866cd2a89, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 2470847456391924780, guid: c9aa7041ade31a64182dfd8866cd2a89, type: 3}
       propertyPath: m_Name
