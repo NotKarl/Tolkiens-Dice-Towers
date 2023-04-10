@@ -1,33 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed;
-    private Waypoints Wpoints;
+    public float speed = 10f;
+    private Transform target;
 
-    private int waypointIndex;
+    private int waypointIndex = 0;
 
     void Start()
     {
-        Waypoints[] Waypoints = GameObject.FindWithTag("Waypoints").GetComponents<Waypoints>();
+        target = Waypoints.waypoints[0];
     }
 
-    private void Update()
+    void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, Wpoints.waypoints[waypointIndex].position, speed * Time.deltaTime);
+        Vector3 dir = target.position - transform.position;
+        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
-        if (Vector2.Distance(transform.position, Wpoints.waypoints[waypointIndex].position) < 0.1f)
+        if (Vector3.Distance(transform.position, target.position) <= 0.4f)
         {
-            if(waypointIndex < Wpoints.waypoints.Length - 1)
-            {
-                waypointIndex ++;
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
+            GetNextWaypoint();
         }
     }
+
+    void GetNextWaypoint()
+    {
+        if (waypointIndex >= Waypoints.waypoints.Length - 1)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        waypointIndex++;
+        target = Waypoints.waypoints[waypointIndex];
+    }
+
 }
