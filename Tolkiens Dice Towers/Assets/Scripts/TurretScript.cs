@@ -5,9 +5,18 @@ using UnityEngine;
 public class TurretScript : MonoBehaviour
 {
     public Transform target;
-    public float range = 15f;
 
+
+    [Header("Attributes")]
+    public float range = 15f;
+    public float fireRate = 1f;
+    private float fireCountdown = 0;
+
+
+    [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +56,19 @@ public class TurretScript : MonoBehaviour
         {
             return;
         }
+
+        if (fireCountdown <= 0f)
+        {
+            Shoot();
+            fireCountdown = 1 / fireRate;
+        }
+
+        fireCountdown -= Time.deltaTime;
+    }
+
+    void Shoot()
+    {
+        Debug.Log("Shoot");
     }
 
     // to always draw range, the selected naming in the function can be deleted 
