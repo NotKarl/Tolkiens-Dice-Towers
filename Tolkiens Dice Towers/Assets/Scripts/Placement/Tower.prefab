@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5375832326137176180}
   - component: {fileID: -8040543569448464634}
   - component: {fileID: -6370073182308660657}
-  - component: {fileID: 9187530604522697012}
+  - component: {fileID: 1747119181225346667}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -115,10 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e9d667163ee6e4099a6607b4b4016b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _placeCollider: {fileID: -8040543569448464634}
-  _placeMat: {fileID: 8781899995477634659, guid: 15d26aace17374947b8f33d3f6af5886, type: 3}
-  _sprite: {fileID: 5375832326137176180}
---- !u!114 &9187530604522697012
+  _camera: {fileID: 0}
+--- !u!114 &1747119181225346667
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23ccb3f3ecf8c74e9be9972a31b87e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 6162495711986508922, guid: 680532057ac4f76468207dfb4265bd6f, type: 3}
-  range: 3
+  target: {fileID: 0}
+  range: 15
   fireRate: 1
   enemyTag: Enemy
+  bulletPrefab: {fileID: 1486322790343408778, guid: f816abd5533f8dd4abace56ba1f2b6b4, type: 3}
+  firePoint: {fileID: 0}
