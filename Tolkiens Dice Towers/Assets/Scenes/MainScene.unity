@@ -1660,7 +1660,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2099642359665110175, guid: b540e64db5e943f4cafc80d732da41eb, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4204824811936657100, guid: b540e64db5e943f4cafc80d732da41eb, type: 3}
       propertyPath: normalEnemy
