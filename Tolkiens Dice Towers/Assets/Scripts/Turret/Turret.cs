@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretScript : MonoBehaviour
+public class Turret : MonoBehaviour
 {
     public Transform target;
 
@@ -15,6 +15,9 @@ public class TurretScript : MonoBehaviour
 
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
+
+    public GameObject bulletPrefab;
+    public Transform firePoint;
 
 
 
@@ -68,7 +71,14 @@ public class TurretScript : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("Shoot");
+        // Debug.Log("Shoot");
+        GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletGo.GetComponent<Bullet>();
+
+        if (bullet != null)
+        {
+            bullet.Seek(target);
+        }
     }
 
     // to always draw range, the selected naming in the function can be deleted 
