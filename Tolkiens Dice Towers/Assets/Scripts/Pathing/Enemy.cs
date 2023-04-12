@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 5f;
     private Transform target;
 
     private int waypointIndex = 0;

@@ -7,6 +7,7 @@ public class GameStateScript : MonoBehaviour
     BackgroundMusicScript BGMusic;
     GameObject BGMusicObject;
     GameObject EnemySpawner;
+    EnemySpawnerScript EnemySpawnerScript;
 
     void Start()
     {
@@ -14,6 +15,7 @@ public class GameStateScript : MonoBehaviour
         BGMusic = BGMusicObject.GetComponent<BackgroundMusicScript>();
 
         EnemySpawner = GameObject.Find("EnemySpawner");
+        EnemySpawnerScript = EnemySpawner.GetComponent<EnemySpawnerScript>();
     }
 
     public void StartGame()
@@ -21,7 +23,8 @@ public class GameStateScript : MonoBehaviour
         print("Starting the Game");
         gameObject.SetActive(false);
         BGMusic.PlayGameplaySound();
-        EnemySpawner.SetActive(true);
+
+        EnemySpawnerScript.spawnNormalEnemy(5);
     }
     public void GameOverScreen()
     {
