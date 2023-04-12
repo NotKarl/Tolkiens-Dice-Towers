@@ -141,5 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90632f7524420254cb1e558a4ac7b0af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenuSound: {fileID: 8300000, guid: 3b7a5e6414cd46f4ca6c56fd6ade7f14, type: 3}
-  GamplayMusicSound: {fileID: 8300000, guid: f0c001cef554e31458a4290fe3848b6a, type: 3}
+  MainMenuSound: {fileID: 8300000, guid: 2ab75fb9d9a4eba45ba987ad8464d3a9, type: 3}
+  GamplayMusicSound: {fileID: 8300000, guid: 1984d297cadfbd64687d6a42c1692fce, type: 3}

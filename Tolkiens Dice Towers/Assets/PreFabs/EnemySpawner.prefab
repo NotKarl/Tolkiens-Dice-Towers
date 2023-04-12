@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e943f2dc5b2694eb8e9085b6fb1938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 4756742781871979765}
   normalEnemy: {fileID: 0}
   bigEnemy: {fileID: 0}
-  spawnerInterval: 3.5
+  spawnerInterval: 2
+  spawnPoint: {fileID: 4756742781871979765}
 --- !u!1 &4756742781871979765
 GameObject:
   m_ObjectHideFlags: 0

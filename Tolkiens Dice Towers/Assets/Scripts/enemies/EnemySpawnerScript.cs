@@ -13,7 +13,7 @@ public class EnemySpawnerScript : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(spawnEnemy(spawnerInterval, normalEnemy, 2));
+        
     }
 
     // Update is called once per frame
@@ -21,7 +21,10 @@ public class EnemySpawnerScript : MonoBehaviour
     {
         
     }
-
+    public void spawnNormalEnemy(int count)
+    {
+        StartCoroutine(spawnEnemy(spawnerInterval, normalEnemy, count));
+    }
     private IEnumerator spawnEnemy(float interval, GameObject enemy, int enemySpawnCount)
     {
         //if (enemySpawnCount == 0) { yield return; }
