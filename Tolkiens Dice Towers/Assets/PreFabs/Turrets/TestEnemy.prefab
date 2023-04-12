@@ -94,7 +94,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8408868399276403417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6500079c0061b2746a826e9f9cbc07f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 103586c8fb88a83499e757f9c459b031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
+  target: {fileID: 0}
+  waypointIndex: 0
+  hp: 1
+  ap: 1
+  alive: 0

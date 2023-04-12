@@ -14,7 +14,7 @@ public class TurretScript : MonoBehaviour
 
 
     [Header("Unity Setup Fields")]
-    public string enemyTag = "Enemy";
+    public string enemyTag = "SuperEnemy";
 
 
 
