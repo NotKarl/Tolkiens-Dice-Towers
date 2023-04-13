@@ -222,7 +222,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &5545721734168905262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247867041837289373, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: WinningScreen
+      value: StartGame
       objectReference: {fileID: 0}
     - target: {fileID: 4247867041837289373, guid: 5fd5e90a05232f4499a3418528d8f8f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

@@ -24,7 +24,8 @@ public class GameStateScript : MonoBehaviour
         gameObject.SetActive(false);
         BGMusic.PlayGameplaySound();
 
-        EnemySpawnerScript.spawnNormalEnemy(5);
+        EnemySpawner.SetActive(true);
+        EnemySpawnerScript.spawnNormalEnemy(10);
     }
 
 

@@ -5,6 +5,10 @@ using UnityEngine.AI;
 
 public class SuperEnemy : MonoBehaviour
 {
+    //Reference to Fort
+    GameObject fortRef;
+    BaseFortScript fort;
+
     //Waypoints:
     public float speed = 4f;
     public Transform target;
@@ -43,8 +47,8 @@ public class SuperEnemy : MonoBehaviour
 
     private void Attack()
     {
-        //play attack animation (explosion?);
-        //hp of tower - the ap of enemy
+        //play attack animation (explosion?)
+        fort.DamageBase(ap); //hp of tower - the ap of enemy
         Death();
     }
 
@@ -91,6 +95,9 @@ public class SuperEnemy : MonoBehaviour
         Debug.Log($"Enemy created! There are/is {count} enemie(s)!");
         alive = true;
 
+        //reference to fort
+        fortRef = GameObject.Find("Fort");
+        fort = fortRef.GetComponent<BaseFortScript>();
     }
 
 
