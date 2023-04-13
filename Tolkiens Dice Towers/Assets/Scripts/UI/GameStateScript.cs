@@ -26,6 +26,8 @@ public class GameStateScript : MonoBehaviour
 
         EnemySpawnerScript.spawnNormalEnemy(5);
     }
+
+
     public void GameOverScreen()
     {
         print("Game Over");
