@@ -33,6 +33,24 @@ public class ResourceManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Code for testing purposes
+        // Check if the "s" key is pressed
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            // Subtract 10 from resource 1 and 5 from resource 2
+            SubtractResources(10, 5);
+        }
 
+        // Check if the "a" key is pressed
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            // Add 10 to resource 1 and 5 to resource 2
+            AddResources(10, 5);
+        }
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            OnWaveCompleted();
+        }
     }
 }
