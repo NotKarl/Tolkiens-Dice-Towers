@@ -9,19 +9,22 @@ public class UIHandler : MonoBehaviour
     [SerializeField] TMP_Text MagicText;
     [SerializeField] TMP_Text WaveText;
 
-    public int stoneCount = 5;
-    public int magicCount = 5;
+    public ResourceManager resourceTracker; // declare the resourceTracker variable here
+
     int waveCount = 1;
     void Start()
     {
-        StoneText.text = stoneCount.ToString() + " Stone";
-        MagicText.text = magicCount.ToString() + " Magic";
+        resourceTracker = FindObjectOfType<ResourceManager>(); // find the ResourceTracker component and assign it to the resourceTracker variable
+        StoneText.text = resourceTracker.stoneCount.ToString() + " Stone";
+        MagicText.text = resourceTracker.magicCount.ToString() + " Magic";
         WaveText.text = "Wave: " + waveCount.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        StoneText.text = resourceTracker.stoneCount.ToString() + " Stone";
+        MagicText.text = resourceTracker.magicCount.ToString() + " Magic";
+        WaveText.text = "Wave: " + waveCount.ToString();
     }
 }
