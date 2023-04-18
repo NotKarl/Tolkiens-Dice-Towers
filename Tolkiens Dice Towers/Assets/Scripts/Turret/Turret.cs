@@ -18,12 +18,17 @@ public class Turret : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Transform firePoint;
+    
+    private Drag drag;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        drag = GetComponent<Drag>();
+        drag._placed = false;
+
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -60,11 +65,19 @@ public class Turret : MonoBehaviour
             return;
         }
 
-        if (fireCountdown <= 0f)
+        if (!drag._placed)
         {
-            Shoot();
-            fireCountdown = 1 / fireRate;
+            return;
         }
+        else
+        {
+            if (fireCountdown <= 0f)
+            {
+                Shoot();
+                fireCountdown = 1 / fireRate;
+            }
+        }
+        
 
         fireCountdown -= Time.deltaTime;
     }

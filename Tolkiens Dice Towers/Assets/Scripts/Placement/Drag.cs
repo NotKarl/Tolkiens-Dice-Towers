@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class Drag : MonoBehaviour
 {
-    //[SerializeField] public GameObject _towerObj;
     [SerializeField] public Camera _camera;
-    //[SerializeField] private CircleCollider2D _placeCollider;
-    //[SerializeField] private GameObject _placeMat;
-    //[SerializeField] private SpriteRenderer _sprite;
-
-    private bool _collidesPath;
-    private bool _collidesTower;    
     
-    private bool dragging = false;
-    private bool _placed = false;
+    public bool dragging = false;
+    public bool _placed = false;
     private Vector3 offset;
+    private bool _collPath = false;
+    private bool _collTower = false;
+
+    private SpriteRenderer _collColor;
 
     private void Update()
     {
@@ -36,7 +33,7 @@ public class Drag : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if(!_placed && !_collidesPath && !_collidesTower)
+        if(!_placed && !_collPath && !_collTower)
         {
             dragging = false;
             _placed = true;
@@ -44,12 +41,16 @@ public class Drag : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.name == "Tower")
-        {
-            Debug.Log("Collision Detected");
-        }
+        Debug.Log("Trigger Entered!");
+        _collPath = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        Debug.Log("Trigger Exited!");
+        _collPath = false;
     }
 
     public Vector2 GetMousePosition()
